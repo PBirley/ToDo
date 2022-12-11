@@ -1,0 +1,4 @@
+<li *ngFor="let item of list">
+  <span>{{item.dueDate}}: {{item.description}}   --></span>
+  <button (click)="deleteListItem($event, item)">Delete</button>
+</li>

@@ -1,0 +1,9 @@
+<p>add-to-list works!</p>
+
+<form [formGroup]="toDoItem" (ngSubmit)="handleSubmit()">
+  <input placeholder="DD/MM/YYYY"
+  formControlName="dueDate">
+  <input placeholder="Description"
+  formControlName="description">
+  <button type="submit">Add</button>
+</form>
